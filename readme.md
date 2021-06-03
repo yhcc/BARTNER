@@ -1,7 +1,7 @@
 This is the code for ACL-ICJNLP2021 paper [A Unified Generative Framework for Various NER Subtasks](www.baidu.com).
 
 Install the package in the requirements.txt, then use the following
-commands to install two other pakcages
+commands to install two other packages
 ```text
 pip install git+https://github.com/fastnlp/fastNLP@dev
 pip install git+https://github.com/fastnlp/fitlog
@@ -46,7 +46,7 @@ For nested dataset `en_ace04`, `en_ace05` and `genia`, the data should like
 ...
 ```
 
-For discontinous dataset `Share_2013`, `Share_2014` and `CADEC`, the data should like (
+For discontinuous dataset `Share_2013`, `Share_2014` and `CADEC`, the data should like (
 each sample has two lines, if the second line is empty means there is not entity.
 )
 ```text
@@ -59,7 +59,7 @@ Cramps would start within 15 minutes of taking pill , even during meals .
 ...
 ```
 
-You can ran the code by directly using
+You can run the code by directly using
 ```shell
 python train.py
 ```
@@ -127,8 +127,8 @@ run multiple times.
 
 We deeply understand how frustrating it can be 
 if the results are hard to reproduce, we tried our best to make sure 
-the results are at least reproducible in our equipment (Usually take 
-at least average from five runs).
+the results were at least reproducible in our equipment (Usually take 
+average from at least  five runs).
 
 
 
