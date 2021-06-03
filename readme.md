@@ -1,4 +1,4 @@
-This is the code for ACL-ICJNLP2021 paper [A Unified Generative Framework for Various NER Subtasks](www.baidu.com).
+This is the code for ACL-ICJNLP2021 paper [A Unified Generative Framework for Various NER Subtasks](https://arxiv.org/abs/2106.01223).
 
 Install the package in the requirements.txt, then use the following
 commands to install two other packages
