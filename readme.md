@@ -58,6 +58,8 @@ Cramps would start within 15 minutes of taking pill , even during meals .
 
 ...
 ```
+We use code from https://github.com/daixiangau/acl2020-transition-discontinuous-ner to pre-process
+ the data.
 
 You can run the code by directly using
 ```shell

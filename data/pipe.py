@@ -279,7 +279,7 @@ class Conll2003NERLoader(ConllLoader):
                 entity_spans.append([start, end])
 
             ds.append(Instance(raw_words=raw_words, entities=entities, entity_tags=entity_tags,
-                               entity_spans=entity_spans))
+                               entity_spans=entity_spans, raw_target=target))
             if self.demo and len(ds) > 30:
                 break
         if len(ds) == 0:
@@ -373,7 +373,7 @@ class OntoNotesNERLoader(ConllLoader):
                 entity_spans.append([start, end])
 
             new_dataset.append(Instance(raw_words=raw_words, entities=entities, entity_tags=entity_tags,
-                                        entity_spans=entity_spans))
+                                        entity_spans=entity_spans, raw_target=target))
 
             if len(new_dataset)>30 and self.demo:
                 break
