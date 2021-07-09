@@ -246,7 +246,8 @@ class Conll2003NERLoader(ConllLoader):
         headers = [
             'raw_words', 'target',
         ]
-        super().__init__(headers=headers, indexes=[0, 1])
+        # most of the data should put the label in the last column.
+        super().__init__(headers=headers, indexes=[0, -1])
         self.demo = demo
 
     def _load(self, path):
