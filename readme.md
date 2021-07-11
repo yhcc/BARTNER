@@ -133,5 +133,22 @@ the results were at least reproducible in our equipment (Usually take
 average from at least  five runs).
 
 
+### Some questions asked by others
+#### 1. Where to get the metric?  
+Since the evaluation takes several seconds, the code will start 
+   to evaluate after a certain epoch (based on our experiments, 
+   the best performance almost always achieved after the pre-set
+   eval_start_epoch). You can change this value (in train.py) to make it evaluate
+   earlier. 
+
+#### 2. About the split of the Conll2003 dataset.
+We follow previous work to concat the train and dev set (which will merge automatically in the train.py) as the 
+   train file. Therefore, the output performance of conll2003 is the test performance.
+
+#### 3. About the split of the Genia dataset.
+Some previous work had no dev split, but we split 10% of the training set to be as the dev set(
+   which will split the train data automatically in the train.py, and the split is deterministic, therefore, follow 
+   the code, you can get the same split as ours). 
+
 
 
