@@ -113,6 +113,7 @@ for name in ['test']:
             src_tokens = batch_x['src_tokens']
             first = batch_x['first']
             src_seq_len = batch_x['src_seq_len']
+            tgt_seq_len = batch_x['tgt_seq_len']
             raw_words = batch_y['raw_words']
             raw_targets = batch_y['raw_target']
             pred_y = model.predict(src_tokens=src_tokens, src_seq_len=src_seq_len, first=first)
