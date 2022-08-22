@@ -115,7 +115,7 @@ process it
     # [['AL-AIN'], ['United', 'Arab', 'Emirates']]
 - entity_tags  # List[str], the same length as entities
     # ['loc', 'loc']
-- entity_spans # List[List[int]], the inner list must have an even number of ints, means the start(inclusive，开区间) and end(exclusive，开区间) of an entity segment
+- entity_spans # List[List[int]], the inner list must have an even number of ints, means the start(inclusive，闭区间) and end(exclusive，开区间) of an entity segment
     # [[0, 1], [2, 5]] or for discontinous NER [[0, 1, 5, 7], [2, 3, 5, 7],...]
 ```
 
